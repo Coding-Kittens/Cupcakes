@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{%block title%}Cupcakes{%endblock%}
+
+{%block content%}
+<h1>Cupcakes!</h1>
+<ul id="cupcakes_list">
+</ul>
+
+<form class="add_cake">
+<label>Flavor<input required type="text" name="flavor"></label>
+<label>Size<input required type="text" name="size"></label>
+<label>Rating<input required type="text" name="rating"></label>
+<label>Image Url<input type="text" name="image"></label>
+<button type="submit" name="button">Add Cupcake</button>
+</form>
+
+<script src="http://unpkg.com/jquery"></script>
+<script src="http://unpkg.com/axios/dist/axios.js"></script>
+<script src="/static/app.js"></script>
+{%endblock%}
